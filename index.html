@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; style-src 'self' 'unsafe-inline';">
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="style.css" >
@@ -85,43 +86,52 @@
 <section id="projetos" class="fade-in">
     <h2>Projetos</h2>
 
-   <article class="card">
-    <img src="projeto-democracia.jpg">
-    <h3>Filho da Democracia</h3>
-    <p>Projeto editorial que resgata a história do poeta Pedro Tierra, preso durante a ditadura militar, reinterpretando a identidade visual de um maço de cigarros como suporte simbólico para sua poesia política.</p>
-    <ul class="skills-list">
-        <li>Adobe InDesign</li>
-        <li>Design Editorial</li>
-        <li>Diagramação</li>
-    </ul>
-</article>
+    <article class="card">
+        <img src="projeto-democracia.jpg" alt="Capa do livro Filho da Democracia">
+        <h3>Filho da Democracia</h3>
+        <p>Projeto editorial que resgata a história do poeta Pedro Tierra, preso durante a ditadura militar, reinterpretando a identidade visual de um maço de cigarros como suporte simbólico para sua poesia política.</p>
+        <ul class="skills-list">
+            <li>Adobe InDesign</li>
+            <li>Design Editorial</li>
+            <li>Diagramação</li>
+        </ul>
+    </article>
 
-    <<article class="card">
-    <h3>Portfólio Pessoal</h3>
-    <p>Este próprio site — construído do zero como primeiro projeto prático do curso de ADS. Estrutura semântica, design responsivo, animações ao rolar a página, modal de imagem e outras interações, tudo em HTML, CSS e JavaScript puro, sem frameworks.</p>
-    <ul class="skills-list">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Git/GitHub</li>
-    </ul>
-    <div class="project-links">
-        <a href="https://github.com/seu-usuario/seu-usuario.github.io" target="_blank" rel="noopener noreferrer" class="btn">Ver código</a>
-    </div>
-</article>
-
-    <section id="contato" class="fade-in">
-    <h2>Contato</h2>
-    <button id="btn-copiar-email" class="btn">mvpcfamamg@gmail.com</button>
+    <article class="card">
+        <h3>Portfólio Pessoal</h3>
+        <p>Este próprio site — construído do zero como primeiro projeto prático do curso de ADS. Estrutura semântica, design responsivo, animações ao rolar a página, modal de imagem e outras interações, tudo em HTML, CSS e JavaScript puro, sem frameworks.</p>
+        <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git/GitHub</li>
+        </ul>
+        <div class="project-links">
+            <a href="https://github.com/Markins100/portif-lio" target="_blank" rel="noopener noreferrer" class="btn">Ver código</a>
+        </div>
+    </article>
 </section>
-    <footer>
+
+<section id="contato" class="fade-in">
+    <h2>Contato</h2>
+    <button id="btn-copiar-email" class="btn">Carregando...</button>
+
+    <div class="project-links" style="justify-content: center; margin-top: 15px;">
+        <a href="mailto:mvpcfamamg@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Curr%C3%ADculo%20-%20Letras&body=Ol%C3%A1%20Marcus%2C%20gostaria%20de%20receber%20seu%20curr%C3%adculo%20de%20Letras." class="btn">Solicitar Currículo (Letras)</a>
+        <a href="mailto:mvpcfamamg@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Curr%C3%ADculo%20-%20ADS&body=Ol%C3%A1%20Marcus%2C%20gostaria%20de%20receber%20seu%20curr%C3%adculo%20de%20ADS." class="btn">Solicitar Currículo (Desenvolvedor)</a>
+    </div>
+    <p id="fallback-email" style="font-size: 14px; margin-top: 10px;"></p>
+</section>
+
+<footer>
     <p>&copy; 2026 Marcus Vinicius. Todos os direitos reservados.</p>
     <div class="social-links">
-        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/Markins100/portif-lio" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://linkedin.com/in/marcus-vinicius-prudenciano-corgosinho-3a11923b6" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    <a href= "http://lattes.cnpq.br/0849703313349125" target="_blank" rel="noopener noreferrer">Lattes</a>
+        <a href="http://lattes.cnpq.br/0849703313349125" target="_blank" rel="noopener noreferrer">Lattes</a>
     </div>
-</footer><div class="modal-overlay" id="modal">
+</footer>
+<div class="modal-overlay" id="modal">
     <img src="" alt="Imagem ampliada" id="modal-img">
 </div>
 <script src="script.js"></script>

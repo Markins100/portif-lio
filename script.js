@@ -36,14 +36,19 @@ function digitar() {
 }
 
 digitar(); const botaoCopiar = document.getElementById('btn-copiar-email');
-const email = "mvpcfamamg@gmail.com";
+const usuario = "mvpcfamamg";
+const dominio = "gmail.com";
+const email = usuario + "@" + dominio;
+
+botaoCopiar.textContent = email;
 
 botaoCopiar.addEventListener('click', () => {
     navigator.clipboard.writeText(email).then(() => {
         botaoCopiar.textContent = "E-mail copiado!";
 
         setTimeout(() => {
-            botaoCopiar.textContent = "mvpcfamamg@gmail.com";
-        }, 2000);
+    botaoCopiar.textContent = email;
+}, 2000);
     });
-});
+}); document.getElementById('fallback-email').textContent =
+    "Se o botão não abrir seu e-mail automaticamente, envie manualmente para: " + email;
